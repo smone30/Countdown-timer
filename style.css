@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  /* Countdown Timer Wrapper */
+  #birthdayCountdown, #christmasCountdown {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.2s;
+  }
+  
+  #birthdayCountdown:hover, #christmasCountdown:hover {
+    transform: scale(1.05);
+  }
+  
+  #birthdayCountdown {
+    border-left: 8px solid #ff69b4;
+  }
+  
+  #christmasCountdown {
+    border-left: 8px solid #008000;
+  }
+  
+  /* Timer Display */
+  #birthdayTimer, #christmasTimer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  
+  #birthdayTimer div, #christmasTimer div {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  #birthdayTimer div span, #christmasTimer div span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  /* Unique Colors for Each Event */
+  #birthdayCountdown h1 {
+    color: #ff69b4; /* Pink for Birthday */
+  }
+  
+  #christmasCountdown h1 {
+    color: #008000; /* Green for Christmas */
+  }
+  
+  #birthdayTimer div {
+    background-color: #ffe6f2;
+    color: #d81b60;
+  }
+  
+  #christmasTimer div {
+    background-color: #e6ffe6;
+    color: #1b5e20;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 600px) {
+    #birthdayTimer div, #christmasTimer div {
+      font-size: 1em;
+      padding: 10px;
+      margin: 5px;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+  

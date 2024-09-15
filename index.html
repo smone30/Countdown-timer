@@ -3,35 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Countdown Timer</title>
+  <title>Countdown Timers</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Birthday Countdown -->
-  <div id="birthdayCountdown">
-    <h1>MY BIRTHDAY</h1>
-    <h2>Countdown Timer</h2>
-    <div id="birthdayTimer">
-      <div><span id="birthdayDays">0</span> Days</div>
-      <div><span id="birthdayHours">0</span> Hours</div>
-      <div><span id="birthdayMinutes">0</span> Minutes</div>
-      <div><span id="birthdaySeconds">0</span> Seconds</div>
+  <div class="container text-center mt-5">
+    <!-- Birthday Countdown -->
+    <div id="birthdayCountdown" class="countdown-box p-4 mb-4">
+      <h1>MY BIRTHDAY</h1>
+      <h2>Countdown Timer</h2>
+      <div id="birthdayTimer" class="d-flex justify-content-around">
+        <div><span id="birthdayDays" class="display-4">0</span> Days</div>
+        <div><span id="birthdayHours" class="display-4">0</span> Hours</div>
+        <div><span id="birthdayMinutes" class="display-4">0</span> Minutes</div>
+        <div><span id="birthdaySeconds" class="display-4">0</span> Seconds</div>
+      </div>
+    </div>
+
+    <!-- Christmas Countdown -->
+    <div id="christmasCountdown" class="countdown-box p-4">
+      <h1>MERRY CHRISTMAS</h1>
+      <h2>Countdown Timer</h2>
+      <div id="christmasTimer" class="d-flex justify-content-around">
+        <div><span id="christmasDays" class="display-4">0</span> Days</div>
+        <div><span id="christmasHours" class="display-4">0</span> Hours</div>
+        <div><span id="christmasMinutes" class="display-4">0</span> Minutes</div>
+        <div><span id="christmasSeconds" class="display-4">0</span> Seconds</div>
+      </div>
     </div>
   </div>
 
-  <!-- Christmas Countdown -->
-  <div id="christmasCountdown">
-    <h1>MERRY CHRISTMAS</h1>
-    <h2>Countdown Timer</h2>
-    <div id="christmasTimer">
-      <div><span id="christmasDays">0</span> Days</div>
-      <div><span id="christmasHours">0</span> Hours</div>
-      <div><span id="christmasMinutes">0</span> Minutes</div>
-      <div><span id="christmasSeconds">0</span> Seconds</div>
-    </div>
-  </div>
+  <!-- Footer Section -->
+  <footer class="footer text-center py-3">
+    <p>© 2024 Soham Mathur. All rights reserved.</p>
+  </footer>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
